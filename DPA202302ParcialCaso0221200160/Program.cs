@@ -10,8 +10,6 @@ var _cnx = _config.GetConnectionString("DevConnection");
 builder.Services.AddDbContext<ExamenParcialContext>(options => { options.UseSqlServer(_cnx); });
 
 
-
-
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
